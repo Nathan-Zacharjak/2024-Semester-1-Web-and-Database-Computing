@@ -1,25 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>
-            Task 2.2
-        </title>
-        <link rel="stylesheet" href="prac2.css">
+        <title>This page definitely has a title</title>
+        <meta charset="utf-8"/>
     </head>
     <body>
-        <h1>
-            L1 Headings are Sans Serif
-        </h1>
-        <hr>
-        <p>
-            All paragraph text is serif. Links, including this link to <a href="http://nyan.cat">http://nyan.cat</a>, are darkgreen, while this <del>text which is struck out</del> is still grey.
-        </p>
-        <p>
-            Highlighted text is <mark>darkblue against pink</mark>.
-        </p>
-        <h2>
-            Level 2 Headings are left-aligned, but also Sans Serif
-        </h2>
-        <pre>Preformatted text uses the monospace font-family, but is normal size.</pre>
+        <ul id="list"></ul>
+        <p id="text"><strong>NOT</strong> working</p>
+
+        <script>
+            var users = ['Bob Lastname',
+                         'Alice Person',
+                         'Franco Familyname',
+                         'Nona Surname',
+                         'Umberto Lastname',
+                         'Xia Person',
+                         'Milton Surname',
+                         'Louisa Familyname',
+                         'Jia Person',
+                         'Shannah Lastname',
+                         'Deon Surname',
+                         'Loreen Person'];
+            var list = document.getElementById("list");
+            for(var i=0; i<=users.length - 1; i++){
+                var li = document.createElement("LI"); //Create new <li>
+                var space = users[i].indexOf(" "); // Get location of space between firstname and surname
+                li.innerHTML = users[i].substring(0, space); // Extract firstname from users and populate <li>
+                list.appendChild(li); // append li to ul
+                // console.log("string");
+            }
+            var p = document.getElementById("text");
+            p.innerHTML = "It <strong>IS</strong> working";
+        </script>
     </body>
 </html>
