@@ -20,8 +20,7 @@
 				"html-validate.vscode-html-validate",
 				"dbaeumer.vscode-eslint",
 				"vsls-contrib.gitdoc",
-				"ms-vsliveshare.vsliveshare-pack",
-				"unjinjang.rest-api-client"
+				"ms-vsliveshare.vsliveshare-pack"
 			]
 		}
 	},
@@ -34,11 +33,11 @@
 
 	// Default settings
 	"settings": {
+		"emmet.showExpandedAbbreviation": "never",
 		"extension-uninstaller.uninstall": [
 		  "github.copilot",
 		  "github.copilot-nightly",
-		  "tabnine.tabnine-vscode",
-		  "timkmecl.chatgpt"
+		  "tabnine.tabnine-vscode"
 		],
 		"extensions.ignoreRecommendations": true,
 		"files.autoSave": "afterDelay",
@@ -57,8 +56,6 @@
 		"gitdoc.commitValidationLevel": "none",
 		"gitdoc.enabled": true,
 		"gitdoc.pullOnOpen": false,
-		"html.suggest.html5": false,
-		"javascript.suggest.enabled": false,
 		"terminal.integrated.defaultProfile.linux": "bash"
 	}
 
