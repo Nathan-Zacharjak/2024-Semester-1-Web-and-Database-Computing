@@ -33,7 +33,6 @@
 
 	// Default settings
 	"settings": {
-		"emmet.showExpandedAbbreviation": "never",
 		"extension-uninstaller.uninstall": [
 		  "github.copilot",
 		  "github.copilot-nightly",
@@ -56,6 +55,8 @@
 		"gitdoc.commitValidationLevel": "none",
 		"gitdoc.enabled": true,
 		"gitdoc.pullOnOpen": false,
+		"html.suggest.html5": false,
+		"javascript.suggest.enabled": false,
 		"terminal.integrated.defaultProfile.linux": "bash"
 	}
 
