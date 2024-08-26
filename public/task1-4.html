@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Prac 7 Task 1.4</title>
+        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+        <style>.button-success {background: rgb(28, 184, 65);color: white;}</style>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+        <script src="javascripts/task1-4.js" defer></script>
+    </head>
+    <body>
+
+        <main id="app">
+
+            <h1>My Blog</h1>
+            <hr />
+            <div id="newpost">
+                <h2>Add a post</h2>
+                <form class="pure-form">
+
+                    <fieldset class="pure-group">
+                        <input type="text" class="pure-input-1-2" placeholder="Blog post title" v-model="title">
+                        <textarea class="pure-input-1-2" placeholder="Blog Post Content" v-model="content"></textarea>
+                    </fieldset>
+
+                    <button type="button" class="pure-button pure-input-1-2 pure-button-primary" v-on:click="makepost">make post</button>
+                </form>
+            </div>
+            <hr />
+            <div id="posts">
+                <h2>Current Posts</h2>
+                <form class="pure-form">
+                    <button type="button" class="pure-button pure-input-1-2 pure-button-primary" v-on:click="getposts">show all posts</button>
+                </form>
+                <div v-for="post in posts">
+                    <h2>{{post.title}}</h2>
+                    <p>{{post.content}}</p>
+                </div>
+            </div>
+
+            <div id="tcs" v-if="tcs_show">
+                <h2>Terms and Conditions</h2>
+                <p>All your base are belong to us.</p>
+                <button type="button" class="pure-button button-success" v-on:click="tcs_accept">Accept</button>
+            </div>
+
+        </main>
+    </body>
+</html>
