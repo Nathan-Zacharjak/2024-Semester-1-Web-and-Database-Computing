@@ -111,6 +111,3 @@ _MACOSX/
 
 # VSCode configs
 .vscode/
-
-# Sakila database
-sakila.sql
