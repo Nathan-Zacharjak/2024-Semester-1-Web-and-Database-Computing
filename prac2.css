@@ -1,0 +1,56 @@
+/* 2.3 */
+h1 {font-family: Raleway, sans-serif;}
+body {font-family: "Noto Serif", serif;}
+a {color: darkgreen;}
+del {color: grey;}
+mark {color: darkblue; background-color: pink;}
+h2 {text-align: left; font-family: Raleway, sans-serif;}
+pre {font-family: monospace;}
+
+/* 2.4 */
+h3 {color:rgb(0, 0, 139, 0.8);}
+.transparent-text {color: rgb(0, 0, 0, 0.5);}
+body {background-image: url("cross.png"); background-repeat: repeat; background-color: #DCF5F5;}
+
+/* 2.5 */
+#content {background-color: white;}
+.blue {color: blue;}
+.fancy {font-family: cursive;}
+
+/* 2.6 */
+.red-border {border-color: red; border-style: solid;}
+.blue-border {border-color: blue; border-style: solid;}
+.red-outline {outline-color: red; outline-style: solid;}
+.rounded-top-border {border-bottom: none; border-radius: 8px 8px 0px 0px;}
+.rounded-bottom-border {border-radius: 0px 0px 8px 8px;}
+
+/* 2.7 */
+.blue-background {background-color: blue;}
+.yellow-background {background-color: yellow;}
+.inner-div-1 {margin: 10px 20px; padding: 12px; width: 676px; height: 176px;}
+.outer-div-2 {margin-top: 20px;}
+.inner-div-2 {padding: 12px; box-sizing: border-box; width: 400px; height: 400px; margin: auto;}
+.align-right {text-align: right;}
+
+/* 2.8 */
+blockquote {font-family: Raleway, sans-serif; color: dimgrey; line-height: 1.5em; word-spacing: 0.2em; text-align: justify;}
+h4 {font-family: Raleway, sans-serif; text-decoration-line: underline; font-style: italic; font-weight: normal;}
+.grey-icon-color {color: #BFCFD4;}
+.centred-text {text-align: center;}
+
+/* 2.9 */
+.horizontal-list {list-style-type: none; margin: 0px; padding: 0px; overflow: hidden; background-color: darkgrey;}
+.horizontal-list-item {float: left; display: block; color:white; text-align: center; padding: 14px 16px; text-decoration: none; font-family: Raleway, sans-serif;}
+.horizontal-list-item:hover {background-color: white; color: darkgrey; text-shadow: 1px 1px 1px lightgrey;}
+ol ul ol {list-style-type:lower-roman;}
+ol ul {list-style-type: square;}
+
+/* 2.10 */
+.fancy-table {border-collapse: collapse; width: 500px;}
+.fancy-table th {background-color: darkslategrey; color:white; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid darkgrey; font-weight: normal; text-align: left;}
+.fancy-table tr {color:black; border-top: none; border-left: none; border-right: none; border-bottom: 1px solid darkgrey;}
+.fancy-table tr:nth-child(even) {background-color: #F8F8F8;}
+
+.complex-table {border-collapse: collapse; width: 500px; border-radius: 5px; border-color: black; border-style: solid;}
+.complex-table th {background-color: palegoldenrod; text-align: start; border-style: solid; border-color: black; border-width: 1px;}
+.complex-table td {background-color: white; text-align: left; border-style: solid; border-color: darkgrey; border-width: 1px;}
