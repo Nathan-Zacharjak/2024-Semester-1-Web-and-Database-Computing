@@ -107,6 +107,10 @@ dist
 .DS_Store
 .AppleDouble
 .LSOverride
+_MACOSX/
 
 # VSCode configs
 .vscode/
+
+# Sakila database
+sakila.sql
